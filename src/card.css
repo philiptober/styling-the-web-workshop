@@ -1,0 +1,116 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12),
+              0 4px 8px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  min-height: 50vh;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  flex-shrink: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #e9ae5e;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+}
+
+.card-footer button {
+  margin-left: 15px;
+}
+
+button {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12),
+              0 4px 8px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(61, 120, 168);
+  color: white;
+  min-width: 120px;
+  height: 32px;
+  border: none;
+  padding: 6px 12px;
+  text-transform: uppercase;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-container input {
+  width: 100%;
+}
+
+.input-container label {
+  position: absolute;
+  top: 21px;
+  left: 0;
+  padding: 0 12px;
+  width: 100%;
+  height: 32px;
+  transition: all 0.35s ease;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+  top: 0;
+  height: 20px;
+  font-size: 8px;
+}
+
+input {
+  box-sizing: border-box;
+  margin-top: 15px;
+  border: none;
+  border-bottom: 1px solid rgb(231, 230, 230);
+  padding: 6px 12px;
+  height: 32px;
+}
+
+input:focus {
+  height: 32px;
+  outline: none;
+  border-bottom: 2px solid rgb(61, 120, 168);
+  padding-bottom: 5px;
+}
+
+button:hover {
+  background: rgb(102, 163, 213);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+button:focus {
+  outline: none;
+}

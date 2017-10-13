@@ -1,0 +1,171 @@
+/* flex grid */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.flex-grow-3 {
+  flex-grow: 3;
+}
+
+.flex-basis-0 {
+  flex-basis: 0px;
+}
+
+.flex-basis-auto {
+  flex-basis: auto;
+}
+
+/* use case specific */
+.height-100 {
+  height: 100px;
+}
+
+.height-200 {
+  height: 200px;
+}
+
+.height-300 {
+  height: 300px;
+}
+
+.height-500 {
+  height: 300px;
+}
+
+.padding {
+  padding: 15px;
+}
+
+.margin-right {
+  margin-right: 15px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.white {
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.item {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+}
+
+.container-1,
+.container-2 {
+  position: relative;
+  z-index: 0;
+  border: 2px dashed black;
+  height: 500px;
+  width: 500px;
+}
+
+.z-item-1,
+.z-item-2,
+.z-item-3,
+.z-item-4,
+.z-item-5,
+.z-item-6 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.z-item-1 {
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: purple;
+}
+
+.z-item-2 {
+  z-index: 1;
+  top: 50px;
+  left: 50px;
+  background: red;
+}
+
+.z-item-3 {
+  z-index: 2;
+  top: 100px;
+  left: 100px;
+  background: orange;
+}
+
+.z-item-4 {
+  z-index: 2;
+  top: 100px;
+  left: 100px;
+  background: yellow;
+}
+
+.z-item-5 {
+  z-index: 3;
+  top: 100px;
+  left: 100px;
+  background: green;
+}
+
+.z-item-6 {
+  z-index: 1;
+  top: 100px;
+  left: 100px;
+  background: pink;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .z-item-1,
+  .z-item-2,
+  .z-item-3,
+  .z-item-4,
+  .z-item-5,
+  .z-item-6 {
+    background: black;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+header svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
