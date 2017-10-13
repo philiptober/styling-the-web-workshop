@@ -1,0 +1,26 @@
+body, div, span, p, a, input, button, img, svg, header, footer {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+html {
+  font-family: 'Lato';
+}
+
+body {
+  margin: 0;
+  padding: 150px 5vw 25px;
+  background-color: $background;
+  color: $primary-text
+}
+
+.hidden {
+  display: none;
+}
